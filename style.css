@@ -71,6 +71,11 @@ img {
   overflow-x: hidden;
 }
 
+/* explain more with the js when an active class is added to any nav item */
+/* #header .nav-list ul.active{
+  left: 0%;
+} */
+
 #header .nav-list ul a {
   font-size: 2.5rem;
   font-weight: 500;
@@ -80,6 +85,26 @@ img {
   text-transform: uppercase;
   padding: 20px;
   display: block;
+}
+
+/* #header .nav-list ul a::after{} */
+/* #header .nav-list ul li:hover a::after{} */
+/* #header .nav-list ul li:hover a{} */
+
+#header .hamburger{
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+#header .hamburger .bar {
+  height: 2px;
+  width: 30px;
+  background-color: rgb(50, 18, 190);
+  position: relative;
+  z-index: -1;
 }
 
 /* Media queries */
