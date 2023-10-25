@@ -91,22 +91,44 @@ img {
 /* #header .nav-list ul li:hover a::after{} */
 /* #header .nav-list ul li:hover a{} */
 
-#header .hamburger{
+#header .hamburger {
   height: 60px;
   width: 60px;
   display: inline-block;
   border: 3px solid white;
   border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 #header .hamburger .bar {
   height: 2px;
   width: 30px;
-  background-color: rgb(50, 18, 190);
+  background-color: blue;
   position: relative;
   z-index: -1;
 }
 
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  left: 0;
+}
+
+#header .hamburger .bar::after {
+  top: 8px;
+}
+
+#header .hamburger .bar::before {
+  bottom: 8px;
+}
 /* Media queries */
 
 /* For desktop */
