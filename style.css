@@ -29,6 +29,40 @@ img {
   width: 100%;
 }
 
+.cta {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 30px;
+  transition: 0.5s ease;
+  transition-property: background-color, color;
+  border-radius: 4px;
+}
+
+.cta:hover {
+  color: white;
+  background-color: crimson;
+}
+
+.brand h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.second-span {
+  font-size: 2rem;
+}
+
+.brand h1 span {
+  color: crimson;
+}
+
 /* Header Section starts here */
 #header {
   position: fixed;
@@ -187,14 +221,86 @@ img {
   animation: text_reveal_box 1s ease;
 }
 
-#hero h1:nth-child(1) span{
+#hero h1:nth-child(1) span {
   animation-delay: 0.5s;
 }
-#hero h1:nth-child(2) span{
+#hero h1:nth-child(2) span {
   animation-delay: 1.5s;
 }
-#hero h1:nth-child(3) span{
+#hero h1:nth-child(3) span {
   animation-delay: 2.5s;
+}
+
+/* end hero section */
+
+/* start of service section */
+#services .services {
+  flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+#services .service-top {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#services .service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#services .service-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(./img/img1.jpg);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#services .service-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 10%, #0f1318 100%);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+#services .service-bottom .icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#services .service-item h2{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#services .service-item p{
+  color: white;
+  text-align: left;
+
+  /* don't forget to add the universal paragraph */
 }
 
 /* my keyframes */
