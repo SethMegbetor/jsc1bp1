@@ -63,6 +63,16 @@ img {
   color: crimson;
 }
 
+
+p{
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+
 /* Header Section starts here */
 #header {
   position: fixed;
@@ -195,7 +205,7 @@ img {
   width: fit-content;
   font-size: 4rem;
   position: relative;
-  /* color: transparent; */
+  color: transparent;
   animation: text_reveal 0.5s ease forwards;
   animation-delay: 1s;
 }
@@ -253,6 +263,7 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
+
 }
 
 #services .service-item {
@@ -302,6 +313,8 @@ img {
 
   /* don't forget to add the universal paragraph */
 }
+
+
 
 /* my keyframes */
 @keyframes text_reveal_box {
@@ -353,5 +366,10 @@ img {
 
   #header .nav-list ul li a {
     font-size: 1.8rem;
+  }
+
+  #services .service-bottom .service-item{
+    flex-basis: 22%;
+    margin: 1.5%;
   }
 }
