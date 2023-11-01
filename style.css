@@ -163,8 +163,7 @@ p {
   transform: translate(-50%, -50%) scale(1);
   letter-spacing: 50px;
   z-index: -1;
-	transition: 0.3s ease letter-spacing;
-
+  transition: 0.3s ease letter-spacing;
 }
 #header .nav-list ul li:hover a::after {
   transform: translate(-50%, -50%) scale(1);
@@ -227,6 +226,17 @@ p {
 #header .hamburger .bar::before {
   bottom: 8px;
 }
+
+#header .hamburger.active .bar::after {
+  bottom: 0;
+  display: none;
+}
+
+#header .hamburger.active .bar::before {
+  top: 0;
+  display: none;
+}
+
 /* hamburger section not done */
 
 /* start of hero section */
